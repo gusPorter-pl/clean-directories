@@ -73,7 +73,7 @@ def log_deleted_items(log_file, items_deleted):
     log(log_file, "")
 
 def clean_directories(log_file, directories):
-    log(log_file, f"Start cleaning directories.")
+    log(log_file, f"Start cleaning directories.\n")
     for directory, ttl in directories.items():
         log(log_file, f"Checking directory: '{directory}'")
         if os.path.exists(directory):
